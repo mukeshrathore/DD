@@ -13,7 +13,8 @@ import {
   MatInputModule,
   MatRadioModule
 } from '@angular/material';
-// import { NgxDnDModule } from '@swimlane/dragula'
+import { NgxDnDModule } from '@swimlane/ngx-dnd';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {
     MatSelectModule,
     MatInputModule,
     MatRadioModule,
-    // NgxDnDModule
+    NgxDnDModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
