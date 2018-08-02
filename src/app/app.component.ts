@@ -18,6 +18,11 @@ export class AppComponent {
     {value: 'May18', viewValue: 'May 18'},
     {value: 'Jun18', viewValue: 'June 18'}
   ];
+
+ val = 500;
+  isDropAllowed = (dragData: any) => {
+    return dragData > this.val;
+  }
   // drop(ev) {
   //   ev.preventDefault();
   //   var data = ev.dataTransfer.getData("text");

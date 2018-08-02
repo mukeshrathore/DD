@@ -14,6 +14,7 @@ import {
   MatRadioModule
 } from '@angular/material';
 // import { NgxDnDModule } from '@swimlane/dragula'
+import { NgDragDropModule } from 'ng-drag-drop';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {
     MatInputModule,
     MatRadioModule,
     // NgxDnDModule
+    NgDragDropModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
