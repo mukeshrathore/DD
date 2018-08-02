@@ -11,7 +11,7 @@ export interface month {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Material Design';
+  title = 'Drag and Drop demo';
 
   months: month[] = [
     {value: 'Apr18', viewValue: 'April 18'},
@@ -19,21 +19,4 @@ export class AppComponent {
     {value: 'Jun18', viewValue: 'June 18'}
   ];
 
- val = 500;
-  isDropAllowed = (dragData: any) => {
-    return dragData > this.val;
-  }
-  // drop(ev) {
-  //   ev.preventDefault();
-  //   var data = ev.dataTransfer.getData("text");
-  //   ev.target.appendChild(document.getElementById(data));
-  // }
-
-  // allowDrop(ev) {
-  //   ev.preventDefault();
-  // }
-
-  // drag(ev) {
-  //   ev.dataTransfer.setData("text", ev.target.id);
-  // }
 }

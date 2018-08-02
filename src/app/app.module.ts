@@ -13,8 +13,8 @@ import {
   MatInputModule,
   MatRadioModule
 } from '@angular/material';
-// import { NgxDnDModule } from '@swimlane/dragula'
-import { NgDragDropModule } from 'ng-drag-drop';
+import { NgxDnDModule } from '@swimlane/ngx-dnd';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { NgDragDropModule } from 'ng-drag-drop';
     MatSelectModule,
     MatInputModule,
     MatRadioModule,
-    // NgxDnDModule
-    NgDragDropModule.forRoot()
+    NgxDnDModule,
+    // FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
