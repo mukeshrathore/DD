@@ -14,17 +14,17 @@
 </div> -->
 
 
-<div class="container float-right">
+<div class="container">
   <div class="row">
-    <div class="col-md-6 mt-2" ngxDroppable>
-      <div class="border p-2">
+    <div class="col-md-8 mb-2" ngxDroppable>
+      <div class="border p-2 mb-2">
         <div class="border text-center" style="padding:7px">
           <p style="margin: 0;font-weight: bold">50 Apr18 IPE Brent FlatPrice at Market for TAG HEDGE</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6" ngxDroppable>
-          <div class="border mt-2 p-2">
+          <div class="border mb-2 p-2">
             <mat-list>
               <mat-list-item>IPE Brent</mat-list-item>
               <hr>
@@ -35,7 +35,7 @@
               <mat-list-item>NYMEX Heat</mat-list-item>
             </mat-list>
           </div>
-          <div class="border mt-2 p-2">
+          <div class="border mb-2 p-2">
             <mat-list>
               <mat-list-item>IPE Brent</mat-list-item>
               <hr>
@@ -71,131 +71,133 @@
 
         <!--     Month List and dropdown     -->
         <div class="col-md-6" ngxDroppable>
-          <div class="row border mt-2 p-2" style="margin-right: 0">
-            <div class="col-md-6">
-              <mat-list>
-                <mat-list-item>Apr18</mat-list-item>
-                <hr>
-                <mat-list-item>May18</mat-list-item>
-                <hr>
-                <mat-list-item>Jun18</mat-list-item>
-                <hr>
-                <mat-list-item>Jul18</mat-list-item>
-                <hr>
-                <mat-list-item>Aug18</mat-list-item>
-                <hr>
-                <mat-list-item>Sep18</mat-list-item>
-                <hr>
-                <mat-list-item>Oct18</mat-list-item>
-                <hr>
-                <mat-list-item>Nov18</mat-list-item>
-                <hr>
-                <mat-list-item>Dec18</mat-list-item>
-                <hr>
-                <mat-list-item>Jan19</mat-list-item>
-                <hr>
-                <mat-list-item>Feb19</mat-list-item>
-                <hr>
-                <mat-list-item>Mar19</mat-list-item>
-                <hr>
-                <mat-list-item>Apr19</mat-list-item>
-                <hr>
-                <mat-list-item>May19</mat-list-item>
-                <hr>
-                <mat-list-item>Jun19</mat-list-item>
-                <hr>
-                <mat-list-item>Jul19</mat-list-item>
-                <hr>
-                <mat-list-item>Aug19</mat-list-item>
-                <hr>
-                <mat-list-item>Sep19</mat-list-item>
-                <hr>
-                <mat-list-item>Oct19</mat-list-item>
-                <hr>
-                <mat-list-item>Nov19</mat-list-item>
-                <hr>
-                <mat-list-item>Dec19</mat-list-item>
-                <hr>
-                <mat-list-item>Jan20</mat-list-item>
-                <hr>
-                <mat-form-field class="w-100">
-                  <mat-select placeholder="Select Month">
-                    <mat-option *ngFor="let m of months" [value]="m.value">
-                      {{m.viewValue}}
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
-              </mat-list>
-            </div>
-            <div class="col-md-6">
-              <mat-list>
-                <mat-list-item>Apr18</mat-list-item>
-                <hr>
-                <mat-list-item>May18</mat-list-item>
-                <hr>
-                <mat-list-item>Jun18</mat-list-item>
+          <div class="border mb-2 p-2">
+            <div class="row">
+              <div class="col-md-6">
+                <mat-list>
+                  <mat-list-item>Apr18</mat-list-item>
+                  <hr>
+                  <mat-list-item>May18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jun18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jul18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Aug18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Sep18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Oct18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Nov18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Dec18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jan19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Feb19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Mar19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Apr19</mat-list-item>
+                  <hr>
+                  <mat-list-item>May19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jun19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jul19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Aug19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Sep19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Oct19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Nov19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Dec19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jan20</mat-list-item>
+                  <hr>
+                  <mat-form-field class="w-100">
+                    <mat-select placeholder="Select Month">
+                      <mat-option *ngFor="let m of months" [value]="m.value">
+                        {{m.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </mat-list>
+              </div>
+              <div class="col-md-6">
+                <mat-list>
+                  <mat-list-item>Apr18</mat-list-item>
+                  <hr>
+                  <mat-list-item>May18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jun18</mat-list-item>
 
-                
-                <hr> 
-                <mat-list-item>Jul18</mat-list-item>
-                 <hr>
-                <mat-list-item>Aug18</mat-list-item>
-                <hr>
-                <mat-list-item>Sep18</mat-list-item>
-                <hr>
-                <mat-list-item>Oct18</mat-list-item>
-                <hr>
-                <mat-list-item>Nov18</mat-list-item>
-                <hr>
-                <mat-list-item>Dec18</mat-list-item>
-                <hr>
-                <mat-list-item>Jan19</mat-list-item>
-                <hr>
-                <mat-list-item>Feb19</mat-list-item>
-                <hr>
-                <mat-list-item>Mar19</mat-list-item>
-                <hr>
-                <mat-list-item>Apr19</mat-list-item>
-                <hr>
-                <mat-list-item>May19</mat-list-item>
-                <hr>
-                <mat-list-item>Jun19</mat-list-item>
-                <hr>
-                <mat-list-item>Jul19</mat-list-item>
-                <hr>
-                <mat-list-item>Aug19</mat-list-item>
-                <hr>
-                <mat-list-item>Sep19</mat-list-item>
-                <hr>
-                <mat-list-item>Oct19</mat-list-item>
-                <hr>
-                <mat-list-item>Nov19</mat-list-item>
-                <hr>
-                <mat-list-item>Dec19</mat-list-item>
-                <hr>
-                <mat-list-item>Jan20</mat-list-item>
-                <hr>
-               <mat-form-field class="w-100">
-                <mat-select placeholder="Select Month">
-                  <mat-option *ngFor="let m of months" [value]="m.value">
-                    {{m.viewValue}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
-              </mat-list>
 
+                  <hr>
+                  <mat-list-item>Jul18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Aug18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Sep18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Oct18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Nov18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Dec18</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jan19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Feb19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Mar19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Apr19</mat-list-item>
+                  <hr>
+                  <mat-list-item>May19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jun19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jul19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Aug19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Sep19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Oct19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Nov19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Dec19</mat-list-item>
+                  <hr>
+                  <mat-list-item>Jan20</mat-list-item>
+                  <hr>
+                  <mat-form-field class="w-100">
+                    <mat-select placeholder="Select Month">
+                      <mat-option *ngFor="let m of months" [value]="m.value">
+                        {{m.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </mat-list>
+
+              </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
-    <div class="col-md-4 mt-2" ngxDroppable>
-      <div class="border p-2">
+    <div class="col-md-4 mb-2" ngxDroppable>
+      <div class="border p-2 mb-2">
         <button mat-raised-button color="primary" style="width: 40%">BUY</button>
         <button mat-raised-button class="float-right" color="warn" style="width: 40%">SELL</button>
       </div>
-      <div class="border mt-2 p-2 text-center">
+      <div class="border mb-2 p-2 text-center">
         <mat-list>
           <input disabled value="50">
           <mat-list-item class="text-center">50</mat-list-item>
@@ -209,7 +211,7 @@
           <mat-list-item>1000</mat-list-item>
         </mat-list>
       </div>
-      <div class="border mt-2 p-2 text-center">
+      <div class="border mb-2 p-2 text-center">
         <mat-list>
           <mat-list-item>Order Type</mat-list-item>
           <hr>
